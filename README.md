@@ -1,2 +1,1 @@
-# bc-project
-britecore design project
+# BriteCore Form Builder

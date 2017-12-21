@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Static - BriteCore Form Builder</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/selectric.css">
+  <link rel="stylesheet" href="css/theme.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#regcheck-navi" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+      <figure>
+        <img src="images/logo.png" alt="">
+      </figure>
+    </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="regcheck-navi">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="static-design.html">Design + Build</a></li>
+      <li><a href="review-design.html">Review</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="menu-button">
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#new-validation-modal">New Form</a>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="sidebar-wrapper">
+      <ul class="sidebar">
+        <li class="title">Choose an Addon</li>
+        <li class="navitem-control">
+          <a href="#">
+            <i class="fa fa-chevron-down"></i> Text
+          </a>
+          <ul class="inner-navitem">
+            <li><a href="#">Title</a></li>
+            <li><a href="#">Paragraph</a></li>
+            <li><a href="#">Text Input</a></li>
+            <li><a href="#">Email</a></li>
+          </ul>
+        </li>
+        <li class="navitem-control">
+          <a href="#">
+            <i class="fa fa-chevron-down"></i> Number
+          </a>
+          <ul class="inner-navitem">
+            <li><a href="#">Range</a></li>
+            <li><a href="#">Date</a></li>
+            <li><a href="#">Date & Time</a></li>
+            <li><a href="#">Time</a></li>
+            <li><a href="#">Currency</a></li>
+            <li><a href="#">Phone Number</a></li>
+            <li><a href="#">Month</a></li>
+          </ul>
+        </li>
+        <li class="navitem-control">
+          <a href="#">
+            <i class="fa fa-chevron-down"></i> User Control
+          </a>
+          <ul class="inner-navitem">
+            <li><a href="#">Upload</a></li>
+            <li><a href="#">Image</a></li>
+            <li><a href="#">Button</a></li>
+            <li><a href="#">Select</a></li>
+          </ul>
+        </li>
+        <li class="navitem-control">
+          <a href="#">
+            <i class="fa fa-chevron-down"></i> Controls
+          </a>
+          <ul class="inner-navitem">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Color</a></li>
+            <li><a href="#">Radio</a></li>
+            <li><a href="#">Checkbox</a></li>
+          </ul>
+        </li>
+        <li class="navitem-control">
+          <a href="#">
+            <i class="fa fa-chevron-down"></i> Utilities
+          </a>
+          <ul class="inner-navitem">
+            <li><a href="#">Horizontal Rule</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><a href="#">Theme Color</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="main-content-wrapper">
+      <div class="container-fluid">
+
+        <div class="module-wrapper">
+          <div class="module-title">
+            <h1>
+              <ul>
+                <li>Abbey Insurance</li>
+              </ul>
+            </h1>
+          </div>
+          <div class="module-body">
+            <div class="col-md-8">
+              <div class="module--filled module-design">
+                <div class="button-holder text-center hidden-md hidden-lg hidden-xl">
+                  <a href="javascript:void(999)" class="button button--block" id="open-menu-mobile">Add New Input</a>
+                </div>
+                <div id="mobile-custom" style="display: none;" class="hidden-md hidden-lg hidden-xl">
+                  <form action="#" id="customSettings">
+                    <div class="form-group">
+                      <h2 class="module--title" id="customise-header">Build Addon</h2>
+                      <p class="module--para">Modify your chosen input and add it to the section of your choice. Each input has a variety of choices. Each input has a label, to explain what each input is for.</p>
+                    </div>
+                    <div class="form-group">
+                      <h4>Range Selector</h4>
+                      <label for="#" class="module--label">Label Text</label>
+                      <input type="text" class="form-control module-input--text" required placeholder="Enter label Text">
+                      <label for="#" class="module--label">Scale Min Value</label>
+                      <input type="text" class="form-control module-input--text" required placeholder="Enter Min Value i.e. 0">
+                      <label for="#" class="module--label">Scale Max Value</label>
+                      <input type="text" class="form-control module-input--text" required placeholder="Enter Max Value i.e. 100">
+                      <label for="#" class="module--label">Increments</label>
+                      <input type="text" class="form-control module-input--text" required placeholder="Enter Increment Value i.e. 0.5">
+                    </div>
+                  </form>
+                  <form class="cta-form">
+                    <div class="form-group create--new" style="padding-bottom: 30px;">
+                      <div class="button-holder" id="customize-button">
+                        <a href="javascript:void(0)" class="add-to-section-mobile" id="add-to-section">Add To Section</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <form action="#" id="mainForm">
+                  <div class="form-group single--column">
+                    <h2 class="module--title" id="header-title">Welcome <a href="javascript:void(99)" class="button button--textonly button--default" id="edit-title">Edit</a></h2>
+                    <p class="module--para" id="header-para">Abbey Insurance Ltd is part of the global AA insurance company that provides customized insurance options for clients based on a number of security questions on our systems. This form will help us gather information about you and your circumstances, so we can make the process as swift as possible. Thank you!</p>
+                  </div>
+                  <div class="form-group double--column">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="#" class="module--label">First Name</label>
+                        <input type="text" class="form-control module-input--text" required placeholder="Enter your first name">
+                        <label for="#" class="module--label">Last Name</label>
+                        <input type="text" class="form-control module-input--text" required placeholder="enter your last name">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="#" class="module--label">Are you a New Customer</label>
+                        <select class="form-control module-input--text" required>
+                          <option value="1">Yes</option>
+                          <option value="2">No</option>
+                        </select>
+                        <label for="#" class="module--label">Email</label>
+                        <input type="email" class="form-control module-input--text" required placeholder="Enter Your Email Address">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group double--column">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="#" class="module--label">What is your goal today?</label>
+                        <select class="form-control module-input--text" required>
+                          <option value="1">Update Information</option>
+                          <option value="2">Inquire About Insurance</option>
+                          <option value="2" selected>Buy Car Insurance</option>
+                          <option value="2">Get Pet Insurance</option>
+                        </select>
+                        <label for="#" class="module--label">Car Make</label>
+                        <input type="text" class="form-control module-input--text" required placeholder="Start typing car details">
+                        <label for="#" class="module--label">Car Model</label>
+                        <input type="text" class="form-control module-input--text" required placeholder="Start typing car details">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="#" class="module--label">Age of Vehicle</label>
+                        <input type="month" class="form-control module-input--text" required placeholder="">
+                        <label for="#" class="module--label">Type of Cover</label>
+                        <select class="form-control module-input--text" required>
+                          <option value="1">Fully Comprehensive</option>
+                          <option value="2">Third Party</option>
+                          <option value="2">Fire and Theft</option>
+                          <option value="2">Private Land</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group single--column">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <label for="#" class="module--label">Start Date</label>
+                        <input type="month" class="form-control module-input--text" required>
+                        <label for="#" class="module--label">How long would you like the cover for?</label>
+                        <input type="range" class="form-control module-input--text" min="0" max="12">
+                        <label for="#" class="module--label">End Date</label>
+                        <input type="text" class="form-control module-input--text" required placeholder="We work this out from Start Date and Slider">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group single--column">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <label for="#" class="module--label">Upload Current License Certificate</label>
+                        <input type="file" class="form-control module-input--text" required>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <form class="cta-form">
+
+                  <div class="form-group create--new">
+                    <div class="button-holder">
+                      <a href="javascript:void(0)" class="button button--ghost" id="createSingle">Add Single Column Section</a>
+                      <a href="#" class="button button--ghost">Add Double Column Section</a>
+                    </div>
+                  </div>
+                  <div class="form-group generate--form text-center">
+                    <div class="button-holder">
+                      <a href="review-design.html" class="button">Ready to Review Questions</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-4 hidden-xs hidden-sm">
+              <div class="module--filled module-design">
+                <form action="#" id="customSettings">
+                  <div class="form-group">
+                    <h2 class="module--title" id="customise-header">Build Addon</h2>
+                    <p class="module--para">Modify your chosen input and add it to the section of your choice. Each input has a variety of choices. Each input has a label, to explain what each input is for.</p>
+                  </div>
+                  <div class="form-group">
+                    <h4>Range Selector</h4>
+                    <label for="#" class="module--label">Label Text</label>
+                    <input type="text" class="form-control module-input--text" required placeholder="Enter label Text">
+                    <label for="#" class="module--label">Scale Min Value</label>
+                    <input type="text" class="form-control module-input--text" required placeholder="Enter Min Value i.e. 0">
+                    <label for="#" class="module--label">Scale Max Value</label>
+                    <input type="text" class="form-control module-input--text" required placeholder="Enter Max Value i.e. 100">
+                    <label for="#" class="module--label">Increments</label>
+                    <input type="text" class="form-control module-input--text" required placeholder="Enter Increment Value i.e. 0.5">
+                  </div>
+                  <div class="form-group">
+                    <label for="#" class="module--label">Theme Color</label>
+                    <input type="color" class="form-control module-input--color" value="#018ea7">
+                  </div>
+                </form>
+                <form class="cta-form">
+                  <div class="form-group create--new">
+                    <div class="button-holder" id="customize-button">
+                      <a href="javascript:void(0)" class="" id="add-to-section">Add To Section</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="new-validation-modal" tabindex="-1" role="dialog" aria-labelledby="new-validation-modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Tell us about your new form</h4>
+          <div class="modal-artifact"></div>
+        </div>
+        <div class="modal-body row">
+          <div class="col-md-8 col-sm-offset-2">
+            <form action="" class="modal-profiles">
+              <div class="form-group">
+                <label for="clientid">Form Name</label>
+                <input type="text" class="form-control" placeholder="Enter Form name">
+              </div>
+              <div class="form-group">
+                <label for="referenceprofile">Does it have a title section?</label>
+                <select name="referenceprofile" id="reference-profile" class="form-control">
+                  <option value="0">Yes</option>
+                  <option value="1">No</option>
+                  <option value="2">Add Manually</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="button-holder text-center">
+            <a href="#" class="button">Accept & Create</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
+<script src="js/jquery.selectric.js" charset="utf-8"></script>
+<!-- <script src="js/app.js" charset="utf-8"></script> -->
+
+<script type="text/javascript">
+  $(function(){
+    $('select').selectric();
+
+    $('#open-menu-mobile').click(function(){
+      $('.sidebar-wrapper').addClass('sidebar--open');
+    });
+    $('.add-to-section-mobile').click(function(){
+      $('#mobile-custom').slideUp();
+    });
+
+    $('.sidebar li a').click(function(){
+      $('.sidebar-wrapper').removeClass('sidebar--open');
+      $('#mobile-custom').slideDown();
+    });
+  });
+</script>
+</html>

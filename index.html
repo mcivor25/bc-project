@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BriteCore Form Builder</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/selectric.css">
+  <link rel="stylesheet" href="css/theme.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#regcheck-navi" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+      <figure>
+        <img src="images/logo.png" alt="">
+      </figure>
+    </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="regcheck-navi">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Design + Build</a></li>
+      <li><a href="#">Review</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="menu-button">
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#new-validation-modal">New Form</a>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="sidebar-wrapper">
+      <ul class="sidebar">
+        <li class="title">Choose an Addon</li>
+        <li class="navitem-control">
+          <a href="#">
+            <i class="fa fa-chevron-down"></i> Text
+          </a>
+          <ul class="inner-navitem">
+            <li><a href="#">Title</a></li>
+            <li><a href="#">Paragraph</a></li>
+            <li id="addText"><a href="#">Text Input</a></li>
+            <li><a href="#">Email</a></li>
+          </ul>
+        </li>
+        <li class="navitem-control">
+          <a href="#">
+            <i class="fa fa-chevron-down"></i> Number
+          </a>
+          <ul class="inner-navitem">
+            <li><a href="#" onclick="alert('clicked')">Range</a></li>
+            <li><a href="#">Date</a></li>
+            <li><a href="#">Date & Time</a></li>
+            <li><a href="#">Time</a></li>
+            <li><a href="#">Currency</a></li>
+            <li><a href="#">Phone Number</a></li>
+            <li><a href="#">Month</a></li>
+          </ul>
+        </li>
+        <li class="navitem-control">
+          <a href="#">
+            <i class="fa fa-chevron-down"></i> User Control
+          </a>
+          <ul class="inner-navitem">
+            <li><a href="#">Upload</a></li>
+            <li><a href="#">Image</a></li>
+            <li><a href="#">Button</a></li>
+            <li><a href="#">Select</a></li>
+          </ul>
+        </li>
+        <li class="navitem-control">
+          <a href="#">
+            <i class="fa fa-chevron-down"></i> Controls
+          </a>
+          <ul class="inner-navitem">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Color</a></li>
+            <li><a href="#">Radio</a></li>
+            <li><a href="#">Checkbox</a></li>
+          </ul>
+        </li>
+        <li class="navitem-control">
+          <a href="#">
+            <i class="fa fa-chevron-down"></i> Utilities
+          </a>
+          <ul class="inner-navitem">
+            <li><a href="#">Horizontal Rule</a></li>
+            <li><a href="#">Progress</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="main-content-wrapper">
+      <div class="container-fluid">
+
+        <div class="module-wrapper">
+          <div class="module-title">
+            <h1>
+              <ul>
+                <li>Form Name</li>
+              </ul>
+            </h1>
+          </div>
+          <div class="module-body">
+            <div class="col-md-8">
+              <div class="module--filled module-design">
+                <form action="#" id="mainForm">
+                  <div class="form-group">
+                    <h2 class="module--title" id="header-title">Section Title <a href="javascript:void(99)" class="button button--textonly button--default" id="edit-title">Edit</a></h2>
+                    <p class="module--para" id="header-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui recusandae placeat, sunt obcaecati, ex tenetur corrupti hic nulla totam asperiores dolore sed, officiis excepturi amet, in dolorem laudantium impedit nesciunt!</p>
+                  </div>
+                </form>
+                <form class="cta-form">
+
+                  <div class="form-group create--new">
+                    <div class="button-holder">
+                      <a href="javascript:void(0)" class="button button--ghost" id="createSingle">Add Single Column Section</a>
+                      <a href="#" class="button button--ghost">Add Double Column Section</a>
+                    </div>
+                  </div>
+                  <div class="form-group generate--form text-center">
+                    <div class="button-holder">
+                      <a href="#" class="button">Ready to Build Questions</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="module--filled module-design">
+                <form action="#" id="customSettings">
+                  <div class="form-group">
+                    <h2 class="module--title" id="customise-header">Customize Addon</h2>
+                    <p class="module--para">Modify your chosen input and add it to the section of your choice. Each input has a variety of choices. Each input has a label, to explain what each input is for.</p>
+                  </div>
+                </form>
+                <form class="cta-form">
+                  <div class="form-group create--new">
+                    <div class="button-holder" id="customize-button">
+                      <a href="javascript:void(0)" class="" id="add-to-section">Add To Section</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="new-validation-modal" tabindex="-1" role="dialog" aria-labelledby="new-validation-modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Tell us about your new form</h4>
+          <div class="modal-artifact"></div>
+        </div>
+        <div class="modal-body row">
+          <div class="col-md-8 col-sm-offset-2">
+            <form action="" class="modal-profiles">
+              <div class="form-group">
+                <label for="clientid">Form Name</label>
+                <input type="text" class="form-control" placeholder="Enter Form name">
+              </div>
+              <div class="form-group">
+                <label for="referenceprofile">Does it have a title section?</label>
+                <select name="referenceprofile" id="reference-profile" class="form-control">
+                  <option value="0">Yes</option>
+                  <option value="1">No</option>
+                  <option value="2">Add Manually</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="button-holder text-center">
+            <a href="#" class="button">Accept & Create</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
+<script src="js/jquery.selectric.js" charset="utf-8"></script>
+<script src="js/app.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+  $(function(){
+    $('select').selectric();
+  });
+</script>
+</html>
